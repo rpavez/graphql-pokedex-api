@@ -46,3 +46,14 @@ export const UserType = new GraphQLObjectType({
     }
   })
 });
+
+export const MyCustomType = new GraphQLObjectType({
+  name: 'CustomModel',
+  description: 'A CustomModel',
+  fields: () => ({
+    data: {
+      type: GraphQLString,
+      description: 'CustomData',
+    }
+  })
+});
