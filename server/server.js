@@ -1,18 +1,16 @@
 import express from 'express';
 import schema from './schema';
+import graphqlHTTP from 'express-graphql';
 import { graphql } from 'graphql';
-import bodyParser from 'body-parser';
 
 let app  = express();
 
-// parse POST body as text
-app.use(bodyParser.text({ type: 'application/graphql' }));
-
-app.post('/graphql', (req, res) => {
-  // execute GraphQL!
-  graphql(schema, req.body)
-    .then(result => res.send(result));
-});
+// GraphqQL server route
+app.use('/graphql', graphqlHTTP(req => ({
+  schema,
+  pretty: true,
+  graphiql: true
+})));
 
 let server = app.listen(
   3000,
