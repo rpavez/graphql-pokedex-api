@@ -1,5 +1,9 @@
-This is a very simple Pokedex backend API built with Node, Express, GraphQL, and Babel.
-Fork Based on [http://davidandsuzi.com](http://davidandsuzi.com).
+## GraphQL, Node.js, Express, GraphiQL (Query Playground)
+
+
+### Recommended Reading
+- https://blog.risingstack.com/graphql-overview-getting-started-with-graphql-and-nodejs/
+- http://davidandsuzi.com/writing-a-basic-api-with-graphql/
 
 ### Running locally
 
@@ -9,7 +13,7 @@ yarn start
 Goto: http://localhost:3000/graphql
 ```
 
-### Running composer
+### Running composer (required Docker)
 
 ```
 docker-compose up
