@@ -1,14 +1,20 @@
 This is a very simple Pokedex backend API built with Node, Express, GraphQL, and Babel.
+Fork Based on [http://davidandsuzi.com](http://davidandsuzi.com).
 
-It's just meant for learning and should be complemented by a series of articles on [http://davidandsuzi.com](http://davidandsuzi.com).
-
-### Running
+### Running locally
 
 ```
-npm install
-node index
+yarn
+yarn start
+Goto: http://localhost:3000/graphql
+```
+
+### Running composer
+
+```
+docker-compose up
+Goto: http://localhost:3000/graphql
 ```
 
 ### Dependencies
-
-A MongoDB instance running locally (```sudo mongod```) is required to run any of the user related queries and mutations (the pokemon root query, which uses in-memory data, works independent of MongoDB).
+MongoDB
