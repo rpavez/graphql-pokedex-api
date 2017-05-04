@@ -51,7 +51,7 @@ export const MyCustomType = new GraphQLObjectType({
   name: 'CustomModel',
   description: 'A CustomModel',
   fields: () => ({
-    data: {
+    dataA: {
       type: GraphQLString,
       description: 'CustomData',
     }

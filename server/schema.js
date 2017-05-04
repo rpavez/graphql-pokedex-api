@@ -61,8 +61,12 @@ let schema = new GraphQLSchema({
       specialOp: {
         type: MyCustomType,
         args: {
-          name: {
-            data: 'MyCustomData',
+          dataA: {
+            data: 'dataA',
+            type: new GraphQLNonNull(GraphQLString)
+          },
+          dataB: {
+            data: 'dataB',
             type: new GraphQLNonNull(GraphQLString)
           }
         },
